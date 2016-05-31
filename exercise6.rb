@@ -10,7 +10,11 @@
 # #
 
 grocery_list = ["carrots", "rice", "salmon", "meat", "wine"]
-puts grocery_list
+grocery_list.each do |x|
+  puts "* " + x
+end
+
+puts grocery_list.join('*')
 grocery_list.push("rice")
 puts grocery_list.length
 
@@ -22,4 +26,6 @@ end
 
 puts grocery_list[1]
 
-puts grocery_list.sort.join('*')
+puts grocery_list.sort.join('* ')
+puts grocery_list.delete("salmon")
+puts grocery_list.inspect
