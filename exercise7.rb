@@ -26,7 +26,8 @@ students.delete(:cohort2)
 puts students
 
 #BONUS: Calculate the total number of students across all cohorts using each and a variable to keep track of the total. Output the result.
+total = 0
 students.each do |x,y|
-  puts "#{y}"
-  puts "#{y}"
+  total += y
 end
+puts total
