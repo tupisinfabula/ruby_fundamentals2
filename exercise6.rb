@@ -13,3 +13,8 @@ grocery_list = ["carrots", "rice", "salmon", "meat", "wine"]
 puts grocery_list
 grocery_list.push("rice")
 puts grocery_list.length
+if grocery_list.include?("bananas")
+  puts "You don't need bananas"
+else
+  puts "You need bananas!"
+end
