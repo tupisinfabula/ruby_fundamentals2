@@ -21,3 +21,5 @@ else
 end
 
 puts grocery_list[1]
+
+puts grocery_list.sort.join('*')
