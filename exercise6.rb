@@ -12,4 +12,4 @@
 grocery_list = ["carrots", "rice", "salmon", "meat", "wine"]
 puts grocery_list
 grocery_list.push("rice")
-puts grocery_list
+puts grocery_list.length
