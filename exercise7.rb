@@ -6,16 +6,18 @@ students = {
 }
 
 #Create a method that displays the name and number of students for each cohort
-students.each do |x,y|
-  puts "#{x}: #{y} students"
+def number_students
+	students.each do |x,y|
+	  puts "#{x}: #{y} students"
+	end
 end
+
+number_students
 
 # Add cohort 4, which had 43 students, to the hash.
 # Use the keys method to output all of the cohort names.
 students[:cohort4] = 43
-students.each do |x,y|
-  puts "#{x}"
-end
+puts students.keys
 
 #The classrooms have been expanded! Increase each cohort size by 5% and display the new results.
 students.each do |x,y|
