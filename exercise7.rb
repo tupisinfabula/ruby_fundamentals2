@@ -1,9 +1,11 @@
+#Start out by creating the following hash representing the number of students in past Bitmaker cohorts
 students = {
   :cohort1 => 34,
   :cohort2 => 42,
   :cohort3 => 22
 }
 
+#Create a method that displays the name and number of students for each cohort
 students.each do |x,y|
   puts "#{x}: #{y} students"
 end
