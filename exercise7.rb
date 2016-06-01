@@ -31,5 +31,6 @@ puts students
 total = 0
 students.each do |x,y|
   total += y
+#  puts total
 end
 puts total
