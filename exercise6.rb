@@ -9,23 +9,38 @@
 # # After you're done, be sure you have everything committed and pushed to your github repo.
 # #
 
+# Create array grocery_list
 grocery_list = ["carrots", "rice", "salmon", "meat", "wine"]
-grocery_list.each do |x|
-  puts "* " + x
+
+# define method grocery to display the list with *
+def grocery(list)
+  list.each do |x|
+    puts "* " + "#{x}"
+  end
 end
 
+# Display list
+grocery(grocery_list)
+
 puts grocery_list.join('*')
-grocery_list.push("rice")
+
+# Add rice in the list
+grocery_list << "rice"
 puts grocery_list.length
 
+# Check if bananas is already in the list
 if grocery_list.include?("bananas")
   puts "You don't need bananas"
 else
   puts "You need bananas!"
 end
 
+# Display the second element in the array
 puts grocery_list[1]
 
 puts grocery_list.sort.join('* ')
 puts grocery_list.delete("salmon")
+# Check if the salmon was deleted
 puts grocery_list.inspect
+
+grocery(grocery_list)
